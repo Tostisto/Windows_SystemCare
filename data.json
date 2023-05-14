@@ -1,0 +1,98 @@
+{
+    "actions": [
+        {
+            "title": "Clean Up Disk Space",
+            "description": "Frees up disk space by deleting temporary files and emptying the recycle bin.",
+            "name": "cleanup",
+            "type": [],
+            "requireAdmin": false,
+            "requireDisks": false
+        },
+        {
+            "title": "Clean Up Temporary Files",
+            "description": "Removes temporary files to free up disk space.",
+            "name": "temp_cleaning",
+            "type": [],
+            "requireAdmin": false,
+            "requireDisks": false
+        },
+        {
+            "title": "Defragment Disks",
+            "description": "Optimizes disk performance by defragmenting the hard drives. (only applicable to HDDs)",
+            "name": "defragmentation",
+            "type": [],
+            "requireAdmin": true,
+            "requireDisks": true
+        },
+        {
+            "title": "Retrim Disks",
+            "description": "Improves SSD performance by running a retrim operation. (only applicable to SSDs)",
+            "name": "retrim",
+            "type": [],
+            "requireAdmin": true,
+            "requireDisks": true
+        },
+        {
+            "title": "Update Packages",
+            "description": "Updates system packages using the Windows Package Manager.",
+            "name": "package_updates",
+            "type": [
+                {
+                    "all": "All Packages"
+                },
+                {
+                    "unknown": "All packages with unknown status"
+                }
+            ],
+            "requireAdmin": true,
+            "requireDisks": false
+        },
+        {
+            "title": "Update Windows",
+            "description": "Installs the latest Windows updates using the Windows Update Manager.",
+            "name": "windows_updates",
+            "type": [],
+            "requireAdmin": true,
+            "requireDisks": false
+        },
+        {
+            "title": "Check Disk Health",
+            "description": "Verifies the health status of the disks.",
+            "name": "disk_checking",
+            "type": [],
+            "requireAdmin": true,
+            "requireDisks": true
+        },
+        {
+            "title": "Windows Defender Scan",
+            "description": "Performs a scan of your system using Windows Defender.",
+            "name": "defender_scan",
+            "type": [
+                {
+                    "quick": "Quick Scan"
+                },
+                {
+                    "full": "Full Scan"
+                }
+            ],
+            "requireAdmin": true,
+            "requireDisks": false
+        },
+        {
+            "title": "Check Windows Files",
+            "description": "Checks the integrity of Windows system files for any corruption.",
+            "name": "file_checking",
+            "type": [],
+            "requireAdmin": false,
+            "requireDisks": false
+        },
+        {
+            "title": "Remove Windows Bloatware",
+            "description": "Removes bloatware from Windows OS.",
+            "name": "bloatware_removal",
+            "type": [],
+            "requireAdmin": true,
+            "requireDisks": false
+        }
+    ]
+}
